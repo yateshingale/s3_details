@@ -3,7 +3,7 @@ import boto3
 from botocore.exceptions import NoCredentialsError, PartialCredentialsError
 
 
-app = Flask(__name_)
+app = Flask(__name__)
 s3 = boto3.client('s3')
 bucket_name = 'file-upload-notification'
 
